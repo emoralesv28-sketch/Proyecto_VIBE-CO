@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #fefcf8;
+    color: #2c2c2c;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Header (mismo que index) */
+header {
+    background: #ffffff;
+    padding: 1rem 0;
+    border-bottom: 1px solid #f0ede8;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.logo p {
+    font-size: 0.7rem;
+    color: #b0a89a;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #c6a87b;
+}
+
+.header-icons {
+    display: flex;
+    gap: 1.2rem;
+}
+
+/* Page header */
+.page-header {
+    text-align: center;
+    padding: 3rem 0 2rem;
+}
+
+.page-header h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+/* Filtros */
+.filtros {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.filtro-btn {
+    background: transparent;
+    border: 1px solid #ddd;
+    padding: 0.5rem 1.5rem;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.filtro-btn:hover {
+    border-color: #c6a87b;
+    color: #c6a87b;
+}
+
+.filtro-btn.active {
+    background: #2c2c2c;
+    color: white;
+    border-color: #2c2c2c;
+}
+
+/* Productos grid */
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(2000px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+/* Footer igual al index */
+footer {
+    background: #1f1f1f;
+    color: #ccc;
+    padding: 3rem 0 1rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-col h3, .footer-col h4 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.redes {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.redes a {
+    color: #aaa;
+    font-size: 1.3rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #333;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    
+    .productos-grid {
+        grid-template-columns: 1fr;
+    }
+}
