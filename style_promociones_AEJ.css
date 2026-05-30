@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #fefcf8;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Header */
+header {
+    background: #ffffff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4a4a4a;
+}
+
+.header-icons {
+    display: flex;
+    gap: 1.2rem;
+}
+
+/* Banner */
+.banner-promo {
+    background: linear-gradient(135deg, #e8e2d9, #d4cbbc);
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-bottom: 3rem;
+}
+
+.banner-promo h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+/* Promociones grid */
+.promociones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.promo-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.promo-card:hover {
+    transform: translateY(-5px);
+}
+
+.promo-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.promo-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #c6a87b;
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.promo-card {
+    position: relative;
+}
+
+.promo-info {
+    padding: 1.5rem;
+}
+
+.promo-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.precios {
+    margin: 1rem 0;
+}
+
+.precio-antiguo {
+    text-decoration: line-through;
+    color: #aaa;
+    margin-right: 0.5rem;
+}
+
+.precio-nuevo {
+    color: #c6a87b;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.btn-oferta {
+    display: inline-block;
+    background: #2c2c2c;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    border-radius: 40px;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+
+/* Footer */
+footer {
+    background: #1f1f1f;
+    color: #ccc;
+    padding: 3rem 0 1rem;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.redes {
+    display: flex;
+    gap: 1rem;
+}
+
+.redes a {
+    color: #aaa;
+    font-size: 1.3rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #333;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    
+    .promociones-grid {
+        grid-template-columns: 1fr;
+    }
+}
